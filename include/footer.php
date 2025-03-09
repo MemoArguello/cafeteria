@@ -1,95 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Cafeteria Las Leñas</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/logo.png">
-
-  </head>
-  <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Cafeteria<small>Las Leñas</small></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">Información</a></li>
-             
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
-            <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span></a>
-            </ul>
-	      </div>
-		  </div>
-	  </nav>
-    <!-- END nav -->
-
-
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 ftco-animate">
-			<form action="#" class="billing-form ftco-bg-dark p-3 p-md-5">
-				<h3 class="mb-4 billing-heading">Administrador</h3>
-	          	<div class="row align-items-end">
-	          		<div class="col-md-12">
-	                <div class="form-group">
-	                	<label for="Email">Email</label>
-	                  <input type="text" class="form-control" placeholder="Email">
-	                </div>
-	              </div>
-                 
-	              <div class="col-md-12">
-	                <div class="form-group">
-	                	<label for="Password">Contraseña</label>
-	                    <input type="password" class="form-control" placeholder="Contraseña">
-	                </div>
-
-                </div>
-                <div class="col-md-12">
-                	<div class="form-group mt-4">
-							<div class="radio">
-                                <button class="btn btn-primary py-3 px-4">Ingresar</button>
-						    </div>
-					</div>
-                </div>
-
-               
-	          </form><!-- END -->
-          </div> <!-- .col-md-8 -->
-          </div>
-        </div>
-      </div>
-    </section> <!-- .section -->
-
-    <footer class="ftco-footer ftco-section img">
+<footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
@@ -150,8 +59,8 @@
 	                <li><span class="icon icon-map-marker"></span><span class="text">Barrio San Antonio - Ayolas Misiones</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+59598654321</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">contacto@laslenas.py</span></a></li>
-                  <li><a href="login.html"><span class="icon icon-user"></span><span class="text">Acceso Dashboard</span></a></li>  
-                </ul>
+					<li><a href="login.php"><span class="icon icon-user"></span><span class="text">Acceso Dashboard</span></a></li>  
+				</ul>
 	            </div>
             </div>
           </div>
@@ -190,44 +99,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-		$(document).ready(function(){
-
-		var quantitiy=0;
-		   $('.quantity-right-plus').click(function(e){
-		        
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
-		        
-		        // If is not undefined
-		            
-		            $('#quantity').val(quantity + 1);
-
-		          
-		            // Increment
-		        
-		    });
-
-		     $('.quantity-left-minus').click(function(e){
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
-		        
-		        // If is not undefined
-		      
-		            // Increment
-		            if(quantity>0){
-		            $('#quantity').val(quantity - 1);
-		            }
-		    });
-		    
-		});
-	</script>
-
     
   </body>
 </html>
