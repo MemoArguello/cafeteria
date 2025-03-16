@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    define("APPURL", "http://localhost/cafeteria");
+    define("CAFENAME", "cafeteria");
+    define("IMAGENURL", "http://localhost/cafeteria/images");
+    define("ADMINURL","http://localhost/cafeteria/admin-panel");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +36,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="images/logo.png">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
