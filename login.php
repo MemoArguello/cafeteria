@@ -32,14 +32,15 @@
 
 
 					echo "<script>
-						Swal.fire({
-								icon: 'success',
-								title: 'Inicio de Sesión Exitosa',
-								text: 'Bienvenido al Admin Panel',
-								}).then((){
-									windows.location.href = '". ADMINURL ."';
-								});
-					</script>";
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Inicio de Sesión Exitoso',
+                        text: 'Bienvenido al Admin Panel',
+                    }).then(() => {
+                        window.location.href = '" . ADMINURL . "';
+                    });
+                </script>";
+                exit(); 
 				}else{
 					echo "<script>
 					Swal.fire({
